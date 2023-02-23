@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	input := make(chan *state.WorkRequest, 3)
-	output := make(chan *state.WorkResponce, 3)
+	input := make(chan *state.WorkRequest, 2)
+	output := make(chan *state.WorkResponce, 2)
 	ctx := context.Background()
 	ctx, cancel := context.WithCancel(ctx)
 	defer cancel()
