@@ -12,7 +12,7 @@ func Exec(cli Client) error {
 		return err
 	}
 	for _, entry := range entries {
-		fmt.Println(entry)
+		fmt.Println("service==>", *entry.Service, "tags==>", entry.Service.Tags, "address===>", entry.Service.Address, "port===>", entry.Service.Port)
 	}
 	return nil
 }
